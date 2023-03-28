@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Texephyr-2022</title>
+    <link rel="icon" href="image/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- CSS Files
+    ================================================== -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/jpreloader.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/plugin.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.theme.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.transitions.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.countdown.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"
+      type="text/css"
+    />
+
+    <!-- custom background -->
+    <link rel="stylesheet" href="css/bg.css" type="text/css" />
+
+    <!-- color scheme -->
+    <link
+      rel="stylesheet"
+      href="css/colors/magenta.css"
+      type="text/css"
+      id="colors"
+    />
+    <link rel="stylesheet" href="css/color.css" type="text/css" />
+
+    <!-- load fonts -->
+    <link
+      rel="stylesheet"
+      href="fonts/font-awesome/css/font-awesome.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="fonts/elegant_font/HTML_CSS/style.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="fonts/et-line-font/style.css"
+      type="text/css"
+    />
+
+    <!-- RS5.0 Stylesheet -->
+    <link rel="stylesheet" href="revolution/css/settings.css" type="text/css" />
+    <link rel="stylesheet" href="revolution/css/layers.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="revolution/css/navigation.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/rev-settings.css" type="text/css" />
+
+    <!-- custom font -->
+    <link rel="stylesheet" href="css/font-style.css" type="text/css" />
+
+    <style>
+      .tp-revslider-mainul,
+      .forcefullwidth_wrapper_tp_banner {
+        height: 100vh !important;
+      }
+
+      .tp-bgimg.defaultimg {
+        background-image: linear-gradient(
+            to bottom right,
+            transparent,
+            #000000b5
+          ),
+          url(image/carousel/slider.gif) !important;
+      }
+
+      /* adapted from  https://codepen.io/glebkema/pen/Xjryjd*/
+
+      body {
+        background: white;
+      }
+
+      .gtco-testimonials {
+        position: relative;
+      }
+      @media (max-width: 767px) {
+        .gtco-testimonials {
+          margin-top: 20px;
+        }
+      }
+      .gtco-testimonials h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+        color: #ffffff;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+          1px 1px 0 #000;
+        letter-spacing: 2px;
+        background-color: black;
+        padding: 10px 5px;
+      }
+      .gtco-testimonials .owl-stage-outer {
+        padding: 30px 0;
+      }
+      .gtco-testimonials .owl-nav {
+        display: none;
+      }
+      .gtco-testimonials .owl-dots {
+        text-align: center;
+      }
+      .gtco-testimonials .owl-dots span {
+        position: relative;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        display: block;
+        background: #fff;
+        border: 2px solid #01b0f8;
+        margin: 0 5px;
+      }
+      .gtco-testimonials .owl-dots .active {
+        box-shadow: none;
+      }
+      .gtco-testimonials .owl-dots .active span {
+        background: #01b0f8;
+        box-shadow: none;
+        height: 12px;
+        width: 12px;
+        margin-bottom: -1px;
+      }
+      .gtco-testimonials .card {
+      }
+
+      .gtco-testimonials .active {
+        opacity: 0.5;
+        transition: all 0.3s;
+      }
+      .gtco-testimonials .center {
+        opacity: 1;
+      }
+      .gtco-testimonials .center h5 {
+        font-size: 24px;
+      }
+      .gtco-testimonials .center h5 span {
+        font-size: 20px;
+      }
+      .gtco-testimonials .center .card-img-top {
+        max-width: 100%;
+        height: 120px;
+        width: 120px;
+      }
+      .owl-carousel .owl-nav button.owl-next,
+      .owl-carousel .owl-nav button.owl-prev,
+      .owl-carousel button.owl-dot {
+        outline: 0;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translatey(30px);
+        }
+
+        50% {
+          transform: translatey(0px);
+        }
+
+        100% {
+          transform: translatey(30px);
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .tp-revslider-mainul,
+        .forcefullwidth_wrapper_tp_banner {
+          height: 100% !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body id="homepage">
+    <div id="wrapper">
+      <!-- header begin -->
+      <header class="transparent">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- logo begin -->
+              <div id="logo">
+                <a href="index.html">
+                  <img class="logo" src="image/logo.png" alt="" />
+                </a>
+              </div>
+              <!-- logo close -->
+
+              <!-- small button begin -->
+              <span id="menu-btn"></span>
+              <!-- small button close -->
+
+              <!-- mainmenu begin -->
+              <ul id="mainmenu" class="ms-2">
+                <li>
+                  <a href="section-events.html">Events<span></span></a>
+                </li>
+                <li>
+                  <a href="section-schedule.html">Schedule<span></span></a>
+                </li>
+                <li>
+                  <a href="section-teams.html">Team<span></span></a>
+                </li>
+                <li>
+                  <a href="#section-sponsors">Sponsors<span></span></a>
+                </li>
+                <li>
+                  <a href="#section-worshops">Workshops<span></span></a>
+                </li>
+                <li>
+                  <a href="login.html" style="color: #d247fb"
+                    >Login<span></span
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-user"></i><span></span></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fa fa-shopping-cart"></i><span></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    style="
+                      background: url('./image/play_game.png') no-repeat;
+                      background-size: cover;
+                      background-size: cover;
+                      padding: 10px 60px;
+                      font-size: 16px;
+                      margin: 10px 0 0 0px;
+                    "
+                    >Play Game<span></span
+                  ></a>
+                </li>
+              </ul>
+              <!-- mainmenu close -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header close -->
+
+      <!-- content begin -->
+      <div id="content" class="no-bottom no-top">
+        <!-- revolution slider begin -->
+        <section
+          id="section-hero"
+          class="fullwidthbanner-container"
+          aria-label="section-slider"
+          data-bgcolor="#101010"
+        >
+          <div id="slider-revolution">
+            <ul>
+              <li
+                data-transition="random-premium"
+                data-slotamount="10"
+                data-masterspeed="200"
+                data-thumb=""
+              >
+                <!--  BACKGROUND IMAGE -->
+                <img
+                  alt=""
+                  class="rev-slidebg"
+                  data-bgparallax="0"
+                  src="image/carousel/slider.gif"
+                  style="height: 100vh !important"
+                />
+              </li>
+            </ul>
+
+            <div style="" class="tp-static-layers">
+              <div
+                class="text-center tp-caption size-28 font-weight-bold text-white tp-static-layer"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0']"
+                data-y="['top','top','top','top']"
+                data-voffset="['185']"
+                data-lineheight="['90','90','90','90']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-type="text"
+                data-responsive_offset="on"
+                data-startslide="0"
+                data-endslide="3"
+                data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['center','center','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="font-family: 'Chakra Petch'"
+              >
+                <span class="id-color-2">MIT WORLD PEACE UNIVERSITY</span>
+              </div>
+
+              <div
+                class="text-center tp-caption size-84 font-weight-bold text-white tp-static-layer"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0']"
+                data-y="['center','center','center','center']"
+                data-lineheight="['90','90','90','90']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-type="text"
+                data-responsive_offset="on"
+                data-startslide="0"
+                data-endslide="3"
+                data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['center','center','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="font-family: 'Chakra Petch'"
+              >
+                Texephyr Fest 2023
+              </div>
+
+              <div
+                class="text-center tp-caption size-20 text-white tp-static-layer"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0']"
+                data-y="['top','top','top','top']"
+                data-voffset="['430']"
+                data-lineheight="['90','90','90','90']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-type="text"
+                data-responsive_offset="on"
+                data-startslide="0"
+                data-endslide="3"
+                data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['center','center','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="font-family: 'Chakra Petch'"
+              >
+                Get your seat before the price goes up!
+              </div>
+
+              <div
+                class="text-center tp-caption size-20 text-white tp-static-layer"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0']"
+                data-y="['top','top','top','top']"
+                data-voffset="['530']"
+                data-lineheight="['90','90','90','90']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-type="text"
+                data-responsive_offset="on"
+                data-startslide="0"
+                data-endslide="3"
+                data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['center','center','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="font-family: 'Chakra Petch'"
+              >
+                <div class="spacer-single"></div>
+                <div class="d-lg-flex justify-content-center sm-hide">
+                  <div class="h6 padding10 pt0 pb0">
+                    <i class="i_h3 fa fa-calendar-check-o id-color"></i>March
+                    20th to 25th
+                  </div>
+                  <div class="h6 padding10 pt0 pb0">
+                    <i class="i_h3 fa fa-user id-color"></i>12 Speakers
+                  </div>
+                  <div class="h6 padding10 pt0 pb0">
+                    <i class="i_h3 fa fa-map-marker id-color"></i>Palo Alto,
+                    California
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tp-caption tp-static-layer"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0']"
+                data-y="['top','top','top','top']"
+                data-voffset="['506']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-type="button"
+                data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
+                data-responsive_offset="on"
+                data-responsive="off"
+                data-startslide="0"
+                data-endslide="3"
+                data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bg:rgba(255, 255, 255, 0.15);bw:2px 2px 2px 2px;"}]'
+                data-textAlign="['center','center','center','center']"
+                data-paddingtop="[12,12,12,12]"
+                data-paddingright="[20,20,20,20]"
+                data-paddingbottom="[12,12,12,12]"
+                data-paddingleft="[20,20,20,20]"
+              ></div>
+
+              <div
+                class="tp-caption tp-static-layer"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0']"
+                data-y="['top','top','top','top']"
+                data-voffset="['506']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-type="button"
+                data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
+                data-responsive_offset="on"
+                data-responsive="off"
+                data-startslide="0"
+                data-endslide="3"
+                data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bg:rgba(255, 255, 255, 0.15);bw:2px 2px 2px 2px;"}]'
+                data-textAlign="['center','center','center','center']"
+                data-paddingtop="[12,12,12,12]"
+                data-paddingright="[20,20,20,20]"
+                data-paddingbottom="[12,12,12,12]"
+                data-paddingleft="[20,20,20,20]"
+              ></div>
+            </div>
+          </div>
+        </section>
+        <!-- revolution slider close -->
+
+        <section
+          id="section-countdown"
+          aria-label="section"
+          class="gradient-to-right pt40 pb40"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 offset-md-1" style="z-index: 100000">
+                <div class="spacer-single"></div>
+                <div id="defaultCountdown"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section begin -->
+        <section
+          id="section-about"
+          data-bgimage="linear-gradient(90deg,#12292c,#000 50%) fixed no-repeat"
+        >
+          <div class="container">
+            <div class="row align-items-center text-left">
+              <div class="col-md-12">
+                <h1 style="text-align: left; font-size: 80px">
+                  Welcome to the Biggest National <br />
+                  Level Tech Fest
+                </h1>
+              </div>
+              <div
+                class="col-lg-5 wow fadeInLeft text-left"
+                data-wow-delay="0s"
+              >
+                <img
+                  src="image/about.png"
+                  class="img-fluid"
+                  style="
+                    -webkit-animation: float 3s ease-in-out infinite;
+                    animation: float 3s ease-in-out infinite;
+                  "
+                />
+              </div>
+              <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
+                <p style="font-size: 18px">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                  dolores et quas molestias excepturi sint occaecati cupiditate
+                  non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum
+                  quidem rerum facilis est et expedita distinctio.
+                </p>
+
+                <div class="spacer10"></div>
+
+                <a
+                  href="#section-speakers"
+                  class="btn-custom font-weight-bold text-white sm-mb-30 scroll-to"
+                  >Know More</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section begin -->
+        <section
+          id="section-features"
+          style="
+            background: linear-gradient(to bottom right, #12292c, #000 25%);
+          "
+        >
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                <h1 style="font-size: 64px">
+                  Why you should Join <br />
+                  Our Event
+                </h1>
+                <div class="separator">
+                  <span><i class="fa fa-square"></i></span>
+                </div>
+                <div class="spacer-single"></div>
+              </div>
+
+              <div class="col-lg-12 wow fadeIn" data-wow-delay="0s">
+                <div class="gtco-testimonials">
+                  <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div>
+                      <img src="image/background.png" class="card" />
+                    </div>
+                    <div>
+                      <img src="image/background02.png" class="card" />
+                    </div>
+                    <div>
+                      <img src="image/background03.png" class="card" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section
+          id="section-ticket"
+          class="text-light"
+          data-bgimage="url(image/bg/2.jpg) fixed top"
+        >
+          <div class="wm wm-border dark wow fadeInDown">workshops</div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                <h1>Workshops</h1>
+                <div class="separator">
+                  <span><i class="fa fa-square"></i></span>
+                </div>
+                <div class="spacer-single"></div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="pricing-s1 mb30 wow fadeInUp">
+                  <div class="top">
+                    <img
+                      src="./image/Workshops/python_for_datascience.jpg"
+                      width="100%"
+                    />
+                  </div>
+                  <div class="bottom">
+                    <h2 margin-bottom="0px">Python Workshop</h2>
+                    <a href="" class="btn btn-custom text-white">View More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="pricing-s1 mb30 wow fadeInUp">
+                  <div class="top">
+                    <img
+                      src="./image/Workshops/python_for_datascience.jpg"
+                      width="100%"
+                    />
+                  </div>
+                  <div class="bottom">
+                    <h2>Python Workshop</h2>
+                    <a href="" class="btn btn-custom text-white">View More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="pricing-s1 mb30 wow fadeInUp">
+                  <div class="top">
+                    <img
+                      src="./image/Workshops/python_for_datascience.jpg"
+                      width="100%"
+                    />
+                  </div>
+                  <div class="bottom">
+                    <h2>Python Workshop</h2>
+                    <a href="" class="btn btn-custom text-white">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section
+          id="section-sponsors"
+          data-bgimage="url(image/bg/3.png) fixed center no-repeat"
+        >
+          <div class="wm wm-border dark wow fadeInDown">sponsors</div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                <h1>Official Sponsors</h1>
+                <div class="separator">
+                  <span><i class="fa fa-square"></i></span>
+                </div>
+                <div class="spacer-single"></div>
+              </div>
+
+              <div class="col-md-12 text-center wow fadeInUp">
+                <h3>Gold Sponsors</h3>
+                <div class="spacer-single"></div>
+                <img src="image/logo/1.png" alt="" class="grey-hover" />
+                <img src="image/logo/2b.png" alt="" class="grey-hover" />
+                <img src="image/logo/3b.png" alt="" class="grey-hover" />
+                <img src="image/logo/4b.png" alt="" class="grey-hover" />
+                <div class="spacer-double"></div>
+
+                <h3>Silver Sponsors</h3>
+                <div class="spacer-single"></div>
+                <img src="image/logo/5.png" alt="" class="grey-hover" />
+                <img src="image/logo/6.png" alt="" class="grey-hover" />
+                <img src="image/logo/7.png" alt="" class="grey-hover" />
+                <img src="image/logo/8b.png" alt="" class="grey-hover" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section
+          id="section-portfolio"
+          class="no-top no-bottom"
+          aria-label="section"
+        >
+          <div
+            id="gallery"
+            class="gallery zoom-gallery full-gallery de-gallery pf_full_width wow fadeInUp"
+            data-wow-delay=".3s"
+          >
+            <!-- gallery item -->
+            <div class="item residential">
+              <div class="picframe">
+                <a href="image/portfolio/1.jpg" title="Event Photo">
+                  <span class="overlay">
+                    <span class="pf_text">
+                      <span class="project-name">View Image</span>
+                    </span>
+                  </span>
+                  <img src="image/portfolio/1.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- close gallery item -->
+
+            <!-- gallery item -->
+            <div class="item hospitaly">
+              <div class="picframe">
+                <a href="image/portfolio/2.jpg" title="Event Photo">
+                  <span class="overlay">
+                    <span class="pf_text">
+                      <span class="project-name">View Image</span>
+                    </span>
+                  </span>
+                  <img src="image/portfolio/2.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- close gallery item -->
+
+            <!-- gallery item -->
+            <div class="item hospitaly">
+              <div class="picframe">
+                <a href="image/portfolio/3.jpg" title="Event Photo">
+                  <span class="overlay">
+                    <span class="pf_text">
+                      <span class="project-name">View Image</span>
+                    </span>
+                  </span>
+                  <img src="image/portfolio/3.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- close gallery item -->
+
+            <!-- gallery item -->
+            <div class="item residential">
+              <div class="picframe">
+                <a href="image/portfolio/4.jpg" title="Event Photo">
+                  <span class="overlay">
+                    <span class="pf_text">
+                      <span class="project-name">View Image</span>
+                    </span>
+                  </span>
+                  <img src="image/portfolio/4.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- close gallery item -->
+          </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section
+          id="call-to-action"
+          class="gradient-to-right text-light call-to-action"
+          aria-label="cta"
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-8 col-md-7">
+                <h3 class="size-2 no-margin">
+                  Get your seat before the price goes up
+                </h3>
+              </div>
+
+              <div class="col-lg-4 col-md-5 text-right">
+                <a
+                  href="#section-ticket"
+                  class="btn-custom text-white scroll-to"
+                  >Register</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- logo carousel section close -->
+
+        <section
+          id="section-fun-facts"
+          class="text-light"
+          data-bgimage="url(image/bg/3.jpg) fixed top"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay=".5s">
+                <div class="de_count">
+                  <h3>1000</h3>
+                  <span class="text-white">Footfall</span>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay=".5s">
+                <div class="de_count">
+                  <h3>18</h3>
+                  <span class="text-white">Events</span>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay=".5s">
+                <div class="de_count">
+                  <h3>2000</h3>
+                  <span class="text-white">Lives Touched</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- footer begin -->
+        <footer class="style-2">
+          <div class="container">
+            <div class="row align-items-middle">
+              <div class="col-md-3">
+                <img src="image/logo.png" class="logo-small" alt="" /><br />
+              </div>
+
+              <div class="col-md-6">
+                Copyright &copy;2022 All rights reserved by
+                <span class="id-color">Texephyr 2022</span>
+              </div>
+
+              <div class="col-md-3 text-right">
+                <div class="social-icons">
+                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" id="back-to-top" class="custom-1"></a>
+        </footer>
+        <!-- footer close -->
+      </div>
+    </div>
+
+    <div id="de-extra-wrap" class="de_light">
+      <span id="b-menu-close">
+        <span></span>
+        <span></span>
+      </span>
+      <div class="de-extra-content">
+        <h3>Information</h3>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo.
+        </p>
+
+        <div class="spacer10"></div>
+
+        <div class="p-4 border">
+          <div class="text-center">
+            <h1>485 of 1000</h1>
+            <p>Seats available</p>
+            <a
+              href="#section-ticket"
+              class="btn-custom btn-fullwidth text-white scroll-to"
+              >Get Your Ticket</a
+            >
+          </div>
+        </div>
+
+        <div class="spacer-single"></div>
+
+        <h3>Where &amp; When?</h3>
+        <div class="h6 padding10 pt0 pb0">
+          <i class="i_h3 fa fa-calendar-check-o id-color"></i>March 20th to 25th
+        </div>
+        <div class="h6 padding10 pt0 pb0">
+          <i class="i_h3 fa fa-map-marker id-color"></i>Palo Alto, California
+        </div>
+        <div class="h6 padding10 pt0 pb0">
+          <i class="i_h3 fa fa-phone id-color"></i>1 200 300 9000
+        </div>
+        <div class="h6 padding10 pt0 pb0">
+          <i class="i_h3 fa fa-envelope-o id-color"></i>info@exhibiztheme.com
+        </div>
+      </div>
+    </div>
+    <div id="de-overlay"></div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jpreLoader.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/video.resize.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/countdown-custom.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+
+    <!-- RS5.0 Core JS Files -->
+    <script src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+    <script src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+
+    <!-- RS5.0 Extensions Files -->
+    <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+
+    <script>
+      jQuery(document).ready(function () {
+        // revolution slider
+        jQuery("#slider-revolution").revolution({
+          sliderType: "standard",
+          sliderLayout: "fullwidth",
+          delay: 5000,
+          navigation: {
+            arrows: {
+              enable: true,
+            },
+            bullets: {
+              enable: false,
+              style: "hermes",
+            },
+          },
+          parallax: {
+            type: "mouse",
+            origo: "slidercenter",
+            speed: 2000,
+            levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
+          },
+          spinner: "off",
+          gridwidth: 1140,
+          gridheight: 700,
+          disableProgressBar: "on",
+        });
+      });
+
+      $(".owl-carousel").owlCarousel({
+        autoplay: true,
+        center: true,
+        loop: true,
+        nav: false,
+      });
+    </script>
+
+    <script>
+      $(window).on("load", function () {
+        $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty(
+          { default_offset_pct: 0.7 }
+        );
+        $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
+          default_offset_pct: 0.3,
+          orientation: "vertical",
+        });
+      });
+    </script>
+  </body>
+</html>
